@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* Main container styling */
+.container {
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    position: relative;
+    padding: 20px;
+}
+
+/* Logo styling */
+.logo {
+    width: 120px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Main title styling */
+.main-title {
+    color: #5050FF;
+    font-size: 36px;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    max-width: 800px;
+    line-height: 1.4;
+}
+
+/* Search bar styling */
+.search-bar {
+    width: 500px;
+    height: 40px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Video placeholder with fixed size */
+.video-placeholder {
+    width: 800px;
+    height: 450px;
+    background-color: black;
+    color: white;
+    font-size: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+/* Programs section styling */
+.programs {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    text-align: left;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 450px; /* Set height to match video */
+}
+
+.programs h2 {
+    color: #5050FF;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Program buttons styling */
+.program-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.program-button {
+    background-color: #5050FF;
+    color: white;
+    font-size: 18px;
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.program-button:hover {
+    background-color: #5050ff;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1200px) {
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .main-title {
+        font-size: 28px;
+        top: 80px;
+        left: 20px;
+        max-width: 90%;
+    }
+
+    .search-bar {
+        width: 50%;
+        height: 30px;
+        top: 20px;
+        right: 20px;
+    }
+
+    .video-placeholder {
+        width: 800px; /* Keep video size fixed */
+        height: 450px;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .programs {
+        top: 700px; /* Position below video */
+        right: 50%;
+        transform: translateX(50%);
+        width: 90%;
+    }
+
+    .program-buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .program-button {
+        font-size: 16px;
+        width: 45%;
+    }
+}
+
