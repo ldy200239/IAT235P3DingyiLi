@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,164 +10,163 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 62.5rem;
     background-color: #f8f8f8;
 }
 
 /* Main container styling */
 .container {
     width: 100%;
-    max-width: 1920px;
-    height: 100vh;
+    max-width: 120rem;
+    height: 62.5rem;
     position: relative;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 /* Logo styling */
 .logo {
-    width: 120px;
-    height: 60px;
+    width: 7.5rem;
+    height: 3.75rem;
     background-color: black;
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 1.25rem;
+    left: 1.25rem;
 }
 
 /* Main title styling */
 .main-title {
     color: #5050FF;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 600;
     position: absolute;
-    top: 20px;
-    left: 150px;
-    max-width: 800px;
+    top: 1.25rem;
+    left: 9.375rem;
+    max-width: 50rem;
     line-height: 1.4;
 }
 
 /* Search bar styling */
 .search-bar {
-    width: 500px;
-    height: 40px;
+    width: 31.25rem;
+    height: 2.5rem;
     background-color: black;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     position: absolute;
-    top: 20px;
-    right: 50px;
+    top: 1.25rem;
+    right: 3.125rem;
     display: flex;
     align-items: center;
 }
 
 .search-icon {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem; 
+    height: 1.875rem;
     background-color: white;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 /* Video placeholder with fixed size */
 .video-placeholder {
-    width: 800px;
-    height: 450px;
+    width: 50rem; 
+    height: 28.125rem;
     background-color: black;
     color: white;
-    font-size: 54px;
+    font-size: 3.375rem; 
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 150px;
-    left: 150px;
+    top: 9.375rem; 
+    left: 9.375rem;
 }
 
 /* Programs section styling */
 .programs {
-    position: absolute;
-    top: 150px;
-    right: 150px;
+    position: absolute; 
+    top: 9.375rem;
+    right: 9.375rem;
     text-align: left;
-    width: 300px;
+    width: 18.75rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 450px; /* Set height to match video */
+    height: 28.125rem;
 }
 
 .programs h2 {
     color: #5050FF;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 2.25rem; 
+    margin-bottom: 1.25rem;
 }
 
 /* Program buttons styling */
 .program-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0.9375rem;
     justify-content: space-between;
 }
 
 .program-button {
     background-color: #5050FF;
     color: white;
-    font-size: 18px;
-    width: 140px;
-    height: 50px;
+    font-size: 1.125rem;
+    width: 8.75rem;
+    height: 3.125rem; 
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .program-button:hover {
-    background-color: #5050ff;
+    background-color: #5050FF;
 }
 
 /* Responsive styling for smaller screens */
-@media (max-width: 1200px) {
+@media (max-width: 75rem) { 
     .container {
-        padding: 10px;
+        padding: 0.625rem; 
     }
 
     .logo {
-        width: 100px;
-        height: 50px;
-        font-size: 10px;
+        width: 6.25rem; 
+        height: 3.125rem; 
+        font-size: 0.625rem;
     }
 
     .main-title {
-        font-size: 28px;
-        top: 80px;
-        left: 20px;
+        font-size: 1.75rem;
+        top: 5rem; 
+        left: 1.25rem;
         max-width: 90%;
     }
 
     .search-bar {
         width: 50%;
-        height: 30px;
-        top: 20px;
-        right: 20px;
+        height: 1.875rem; 
+        top: 1.25rem;
+        right: 1.25rem;
     }
 
     .video-placeholder {
-        width: 800px; /* Keep video size fixed */
-        height: 450px;
-        top: 200px;
+        width: 50rem;
+        height: 28.125rem;
+        top: 12.5rem;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .programs {
-        top: 700px; /* Position below video */
+        top: 43.75rem;
         right: 50%;
         transform: translateX(50%);
         width: 90%;
@@ -174,12 +174,17 @@ body {
 
     .program-buttons {
         justify-content: center;
-        gap: 10px;
+        gap: 0.625rem; 
     }
 
     .program-button {
-        font-size: 16px;
+        font-size: 1rem; 
         width: 45%;
     }
 }
 
+/* I get the tuition from these tow websits:
+    https://www.bilibili.com/video/BV1wc411N79R?spm_id_from=333.788.player.switch&vd_source=72f89c3c7f9e498ea46934ac1e100076&p=43
+
+    https://www.bilibili.com/video/BV1f24y1b7B7?spm_id_from=333.788.recommend_more_video.-1&vd_source=72f89c3c7f9e498ea46934ac1e100076
+*/
